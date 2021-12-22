@@ -1,0 +1,8 @@
+# Scoring API
+curl -XPOST -H "Content-Type: application/json" -d '{"data": [{"__index_level_0__": "2000-01-01T00:00:00.000Z", "day_of_month": 0, "day_of_week": 0, "hour_of_day": 0, "month_num": 0, "passengerCount": 0, "tripDistance": 0.0, "vendorID": 0}]}' 127.0.0.1:6789/score
+
+# Extract a container image from a running container
+docker commit <container_id> <image_name>
+
+# Run a IoT edge device as a container
+docker run -it -d --privileged -e connectionString='<iot_edge_device_conn_str' toolboc/azure-iot-edge-device-container --restart=always -n <edge_device_name>
